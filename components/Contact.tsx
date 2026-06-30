@@ -152,7 +152,7 @@ export default function Contact() {
             )}
           </div>
 
-          <div className="lg:w-56 flex flex-col gap-4 lg:pt-24">
+          <div className="lg:w-56 flex flex-col gap-4 pt-6 lg:pt-24 border-t lg:border-t-0 border-[var(--border)]">
             <a
               href="mailto:patriciagabriellegarcia@gmail.com"
               className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors break-all"

@@ -7,7 +7,7 @@ export default function Hero() {
       className="min-h-screen flex flex-col justify-center px-6 pt-24 pb-16 max-w-5xl mx-auto"
     >
       <div className="max-w-3xl">
-        <p className="text-sm text-[var(--accent)] font-medium mb-6 tracking-wide uppercase">
+        <p className="text-xs md:text-sm text-[var(--accent)] font-medium mb-6 tracking-wide uppercase">
           Taking on consulting projects · AI, product strategy &amp; growth
         </p>
 
@@ -15,11 +15,11 @@ export default function Hero() {
           Ella Garcia
         </h1>
 
-        <p className="text-xl text-[var(--muted)] font-medium mb-8">
+        <p className="text-base md:text-xl text-[var(--muted)] font-medium mb-8">
           Ex-Google · Technical Product &amp; Strategy. Builder.
         </p>
 
-        <p className="text-lg text-[var(--muted)] leading-relaxed max-w-2xl mb-10">
+        <p className="text-base md:text-lg text-[var(--muted)] leading-relaxed max-w-2xl mb-10">
           I spent three and a half years at Google in Singapore as the technical product and
           strategy lead for Southeast Asia&apos;s largest advertisers — building AI-enabled solutions,
           leading go-to-market strategy, and getting very comfortable at the intersection of product,

@@ -14,7 +14,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -99,7 +99,7 @@ export default function Nav() {
           )}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-[var(--fg)] flex flex-col gap-1.5"
+            className="text-[var(--fg)] flex flex-col gap-1.5 p-2 -mr-2"
             aria-label="Toggle menu"
           >
             <span className={`block w-6 h-0.5 bg-current transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
@@ -111,13 +111,13 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[var(--bg)] border-b border-[var(--border)] px-6 pb-6 flex flex-col gap-4">
+        <div className="md:hidden bg-[var(--bg)] border-b border-[var(--border)] px-6 pb-4 flex flex-col">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="text-sm text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
+              className="text-sm text-[var(--muted)] hover:text-[var(--fg)] transition-colors py-3 border-b border-[var(--border)] last:border-0"
             >
               {l.label}
             </a>
