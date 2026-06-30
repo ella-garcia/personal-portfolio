@@ -11,30 +11,31 @@ export default function About() {
         <div className="flex flex-col-reverse md:flex-row gap-12 md:gap-16 items-start">
           <div className="max-w-[680px] space-y-6 text-[var(--muted)] leading-relaxed text-base">
             <p>
-              I spent three and a half years at Google in Singapore as a Product Deployment Engineer
-              within gTech — the technical arm of Google&apos;s sales organization. In practice, that
-              meant owning a $160M advertiser portfolio and acting as the senior technical product and
-              strategy lead for Southeast Asia&apos;s largest advertisers. I built and deployed AI-enabled
-              advertising solutions on Gemini and GCP, led go-to-market strategy for major Google
-              product launches including GA4 and YouTube, and served as the individual contributor
-              lead for Video across the entire Southeast Asia region. I was also an analyst on the
-              e-Conomy SEA 2024 report — a joint publication with Google, Temasek, and Bain &amp; Company.
+              Most of my professional career has been at Google in Singapore, where I spent over
+              three years as a technical product and strategy lead on the Ads side. At Google, my
+              title was Product Deployment Engineer — which in gTech means you&apos;re the product and
+              technical lead for your client portfolio. In practice: I managed a $160M enterprise
+              book, architected measurement infrastructure, built AI-enabled advertising solutions
+              on Gemini and GCP, led go-to-market strategy for products including GA4 and YouTube,
+              and owned the Video product area for Southeast Asia. I also contributed as an analyst
+              to the 2024 South East Asia e-Conomy Report on video commerce and the creator economy.
             </p>
             <p>
-              I&apos;m currently in Madrid completing a dual MBA and MS in Computer Science at IE
-              University (Beta Gamma Sigma, Top 20%), alongside the Stanford LEAD Executive Program at
-              Stanford GSB. While studying, I&apos;m building three products:{" "}
+              I&apos;m now in Madrid completing a dual International MBA and MS in Computer Science at
+              IE University, alongside the Stanford LEAD professional certificate program. Outside
+              of coursework I&apos;m building three things:{" "}
               <a href="https://lyferr.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Lyferr</a>
-              , a data-driven platform for sustainable travel;{" "}
-              <a href="https://gendersmartinvesting.kerubincapital.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Kerubin</a>
-              , a gender-smart investing map for gender-lens investors; and Tanaw, an AI platform for
-              global talent sourcing and recruiting.
+              , a data-driven platform for sustainable tourism;{" "}
+              <a href="https://gendersmartinvesting.kerubincapital.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Kerubin Capital</a>
+              , a tool for gender-smart investing; and Tanaw, an AI platform to improve how
+              companies source and recruit global talent. These aren&apos;t side projects in the
+              &ldquo;someday&rdquo; sense — they&apos;re active builds I&apos;m working on now.
             </p>
             <p>
-              I&apos;m Filipina, fluent in English, Filipino (Tagalog), and Mandarin Chinese, and I&apos;ve
-              lived and worked across Singapore, the Philippines, the US, China, and now Spain. Outside
-              of work I run, and I spend a lot of time thinking about the intersection of AI,
-              governance, and speech analysis — both as a practitioner and as a researcher.
+              I&apos;m Filipina, grew up across Asia, and speak English, Tagalog, and enough Mandarin
+              to get by after a semester at Peking University. When I&apos;m not building, I&apos;m running
+              — or pulling apart political speeches to see how language, framing, and delivery shape
+              what people actually believe.
             </p>
           </div>
 

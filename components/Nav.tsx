@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 const links = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
+  { href: "#case-studies", label: "Work" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];

@@ -3,22 +3,24 @@ const currentBuilds = [
     name: "Lyferr",
     status: "Live",
     link: "https://lyferr.com",
-    description: "Data-driven platform for sustainable travel.",
-    tags: ["Sustainable Tourism", "Product Strategy", "0→1"],
+    description:
+      "Building a data-driven platform to make sustainable travel more accessible and discoverable. Architecting the product strategy, data infrastructure, and user experience from 0 to 1.",
+    tags: ["Sustainable Tourism", "Product Strategy", "0→1", "Data Platforms"],
   },
   {
     name: "Kerubin Gender Smart Investing Map",
     status: "Live",
     link: "https://gendersmartinvesting.kerubincapital.com",
     description:
-      "Gender-smart investing map — better data and tooling for gender-lens investors.",
-    tags: ["FinTech", "Gender Lens Investing", "Impact"],
+      "A platform for gender-smart investing — helping capital flow toward gender-lens opportunities with better data and tooling for investors. Leading product and strategy.",
+    tags: ["FinTech", "Gender Lens Investing", "Product Management", "Impact"],
   },
   {
     name: "Tanaw",
     status: "In Progress",
     link: null,
-    description: "AI platform for global talent sourcing and recruiting.",
+    description:
+      "Building an AI platform to improve how companies find and recruit global talent. Focused on automating workflows and reducing the friction between sourcing and decision-making.",
     tags: ["AI", "Recruiting Tech", "Workflow Automation", "Python"],
   },
 ];
@@ -29,15 +31,15 @@ const professionalWork = [
     status: "Shipped",
     link: null,
     description:
-      "Led GTM + contributed to 3 AI ad products on Gemini/GCP — creative analysis, content sourcing, content assembly.",
-    tags: ["Gemini", "GCP", "Python", "AI", "GTM"],
+      "Led go-to-market and contributed to development of three AI advertising products built on Gemini and GCP — covering creative analysis, content sourcing, and content assembly for SEA's largest advertisers.",
+    tags: ["Gemini", "GCP", "Python", "AI", "Go-to-Market"],
   },
   {
     name: "GA4 Enterprise Implementations",
     status: "Shipped",
     link: null,
     description:
-      "End-to-end GA4 for enterprise clients across e-commerce, aviation, healthcare, and financial services. Drove significant adoption across CPG clients in the Philippines.",
+      "Designed and led end-to-end GA4 implementations for major regional advertisers across e-commerce, aviation, healthcare, and financial services. Drove significant adoption across CPG clients in the Philippines.",
     tags: ["GA4", "BigQuery", "SQL", "Measurement", "1PD"],
   },
   {
@@ -45,7 +47,7 @@ const professionalWork = [
     status: "Shipped",
     link: null,
     description:
-      "Full technical audit + implementation for a leading Southeast Asian fintech app: deep linking, W2AC, app campaigns (Android + iOS).",
+      "Led a full technical audit and implementation plan for a leading Southeast Asian fintech app — covering deep linking, web-to-app conversion, and app campaign setup across Android and iOS.",
     tags: ["Deep Linking", "Firebase", "App Measurement", "Fintech"],
   },
 ];

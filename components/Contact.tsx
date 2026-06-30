@@ -6,22 +6,27 @@ const services = [
   {
     title: "AI Strategy & Implementation",
     description:
-      "Designing AI workflows that actually ship — strategy, tool selection, and GTM behind products that use it. Built on Gemini, GCP, Python at enterprise scale.",
+      "Designing AI workflows that actually ship — not decks about AI, but the strategy, tool selection, and go-to-market behind products that use it. Built on Gemini, GCP, Python, and led this work at scale for enterprise clients.",
   },
   {
     title: "Product Strategy & 0→1 (AdTech / MarTech)",
     description:
-      "GTM and product strategy with a track record in AdTech/MarTech at enterprise scale, and active builds in sustainable tech and fintech.",
+      "From blank slate to shipped product, with a track record in AdTech and MarTech at enterprise scale. Good fit for teams that need someone who understands both the technical stack and the commercial logic.",
+  },
+  {
+    title: "Go-to-Market & Growth",
+    description:
+      "Regional playbooks, product adoption programs, and scaled market entry strategies — particularly for Southeast Asia and Europe. Built GTM for Google's largest regional products.",
   },
   {
     title: "Product Consulting (Project-Based)",
     description:
-      "Scoped engagements on specific problems — GTM reviews, early-stage strategy, measurement infrastructure, product audits. A sharp outside perspective on a defined problem.",
+      "Scoped engagements on specific product problems — go-to-market reviews, early-stage strategy, measurement infrastructure, or product audits. A sharp outside perspective on a defined problem.",
   },
   {
     title: "Research & Thought Leadership",
     description:
-      "Contributing to industry reports, policy work, and academic research on AI, governance, and emerging markets. Open to think tanks, research groups, and policy institutes.",
+      "Contributing to industry reports, policy work, and academic research on AI, governance, and emerging markets. Published on telehealth policy; contributed to the Google/Temasek/Bain e-Conomy SEA 2024 report.",
   },
 ];
 
@@ -67,7 +72,7 @@ export default function Contact() {
           work of bridging AI strategy and real implementation.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-6">
           {services.map((s) => (
             <div
               key={s.title}
@@ -87,10 +92,11 @@ export default function Contact() {
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-[var(--fg)] mb-4">Let&apos;s talk.</h3>
             <p className="text-[var(--muted)] text-sm leading-relaxed mb-8 max-w-md">
-              I&apos;m open to consulting and advisory work, research collaborations, and conversations
-              about what you&apos;re building. If it sits at the intersection of AI, growth, and impact —
-              especially in sustainable tech, fintech, or AdTech/MarTech — I&apos;m especially interested.
-              No cold pitches, but genuine conversations are always welcome.
+              I take on consulting and advisory work across AI strategy, product, and growth — and
+              I&apos;m always open to research collaborations and conversations about what you&apos;re
+              building. If it sits at the intersection of AI, impact, and commercial outcomes —
+              especially in sustainable tech, fintech, or AdTech/MarTech — reach out. No cold
+              pitches, but genuine conversations are always welcome.
             </p>
 
             {status === "sent" ? (
