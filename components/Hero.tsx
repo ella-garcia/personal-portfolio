@@ -15,7 +15,7 @@ export default function Hero() {
           {/* Photo tile */}
           <div
             className="eg-tile tile-photo eg-rise"
-            style={{ gridColumn: "span 5", gridRow: "span 2", minHeight: 680 }}
+            style={{ gridColumn: "span 4", gridRow: "span 2", minHeight: 480 }}
           >
             <div className="eg-photo">
               <Image
@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
 
           {/* Intro tile */}
-          <div className="eg-tile eg-rise" style={{ gridColumn: "span 7", minHeight: 440 }}>
+          <div className="eg-tile eg-rise" style={{ gridColumn: "span 8", minHeight: 360 }}>
             <span className="eg-label">Forward deployed engineer and strategist · Madrid</span>
             <div style={{ display: "grid", gap: "var(--space-6)" }}>
               <h1 className="display-xl" style={{ margin: 0 }}>Ella Garcia</h1>
@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
 
           {/* Hiring managers tile */}
-          <a className="eg-tile tile-accent eg-rise" href="#looking" style={{ gridColumn: "span 4", minHeight: 232 }}>
+          <a className="eg-tile tile-accent eg-rise" href="#looking" style={{ gridColumn: "span 5", minHeight: 232 }}>
             <span className="eg-notch">
               <span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span>
             </span>
