@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ArrowIcon = () => (
   <svg viewBox="0 0 18 18" width={18} height={18}>
     <path d="M5 13L13 5M6.5 5H13V11.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -22,12 +24,12 @@ export default function Builds() {
           style={{ gridColumn: "span 7", gridRow: "span 2" }}
         >
           <span className="eg-notch"><span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span></span>
+          <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: "var(--radius-sm)", overflow: "hidden", marginBottom: "var(--space-4)" }}>
+            <Image src="/kerubin-map.webp" alt="Kerubin Gender Smart Investing Map" fill style={{ objectFit: "cover" }} />
+          </div>
           <div className="eg-card-head">
             <span className="eg-card-title">Gender Smart Investing Map</span>
             <span className="eg-tag eg-tag--live">Live</span>
-          </div>
-          <div className="eg-photo" style={{ aspectRatio: "16/9", minHeight: 0, height: "auto", borderRadius: "var(--radius-sm)", maxWidth: "100%" }}>
-            <span className="eg-photo-caption">[Map screenshot, 16:9]</span>
           </div>
           <p className="eg-card-body">
             Technical lead and product builder for Kerubin Capital. Built and deployed the site: intake forms for four entity types, gated early access with hashed passwords and cookie sessions, an interactive D3 network map and a responsive design system.
@@ -47,6 +49,9 @@ export default function Builds() {
           style={{ gridColumn: "span 5" }}
         >
           <span className="eg-notch"><span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span></span>
+          <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: "var(--radius-sm)", overflow: "hidden", marginBottom: "var(--space-4)" }}>
+            <Image src="/lyferr-screenshot.webp" alt="Lyferr wildlife guide platform" fill style={{ objectFit: "cover", objectPosition: "top" }} />
+          </div>
           <div className="eg-card-head">
             <span className="eg-card-title">Lyferr</span>
             <span className="eg-tag eg-tag--progress">In progress</span>
