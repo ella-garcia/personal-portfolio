@@ -199,7 +199,7 @@ a:hover .eg-arrow svg { transform: rotate(45deg); }
 
 /* ── Contact / CTA ── */
 .eg-cta { display: grid; gap: var(--space-8); padding-block: 0; }
-.eg-cta-title { font-size: 80px; line-height: 1.02; font-weight: 600; letter-spacing: -0.04em; max-width: 12ch; margin: 0; }
+.eg-cta-title { font-size: 56px; line-height: 1.05; font-weight: 600; letter-spacing: -0.03em; max-width: 16ch; margin: 0; }
 .eg-copy { font-size: 17px; font-weight: 500; user-select: all; }
 .eg-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-4); padding-block: var(--space-6); border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-muted); }
 
@@ -221,7 +221,7 @@ a:hover .eg-arrow svg { transform: rotate(45deg); }
   .eg-split, .eg-service { grid-template-columns: 1fr; gap: var(--space-4); }
   .eg-row { grid-template-columns: 1fr; gap: var(--space-2); }
   .eg-tile-title { font-size: 28px; }
-  .eg-cta-title { font-size: 48px; }
+  .eg-cta-title { font-size: 40px; }
   .eg-stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .fact-row { grid-template-columns: 1fr; gap: var(--space-1); }
   .sec { padding-block: var(--space-24) 0; }
@@ -234,7 +234,7 @@ a:hover .eg-arrow svg { transform: rotate(45deg); }
   .eg-stat { padding: var(--space-6); min-height: 150px; }
   .eg-stat-figure { font-size: 36px; }
   .eg-card-title, .eg-row-title, .eg-service h3 { font-size: 22px; }
-  .eg-cta-title { font-size: 42px; }
+  .eg-cta-title { font-size: 34px; }
   .eg-nav-pill a { padding: var(--space-2) var(--space-3); }
   .eg-nav-pill .eg-btn--light { padding: 0 var(--space-3); }
   .display-xl { font-size: 52px; } .display-lg { font-size: 42px; }
