@@ -1,9 +1,11 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import Stats from "@/components/Stats";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import FeaturedIn from "@/components/FeaturedIn";
+import Deployments from "@/components/Deployments";
+import Builds from "@/components/Builds";
+import Looking from "@/components/Looking";
+import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -11,14 +13,14 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <FeaturedIn />
-        <Contact />
-      </main>
+      <Hero />
+      <Stats />
+      <About />
+      <Deployments />
+      <Builds />
+      <Looking />
+      <Services />
+      <Contact />
       <Footer />
     </>
   );

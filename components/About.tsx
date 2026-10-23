@@ -1,52 +1,77 @@
-import Image from "next/image";
+const timeline = [
+  {
+    when: "2025 to 2027",
+    title: "Dual MS in Computer Science and Business Technology and International MBA",
+    meta: "IE University · Madrid",
+    body: "Beta Gamma Sigma, top 20% of class. Class Representative and lead AI workshop facilitator.",
+  },
+  {
+    when: "2024 to 2025",
+    title: "Product Deployment Engineer II, Google Ads",
+    meta: "Google · Singapore",
+    body: "Technical lead for AI and advertising products across a $160M portfolio. Led the YouTube technical product area for Southeast Asia.",
+  },
+  {
+    when: "2022 to 2024",
+    title: "Product Deployment Engineer I, Google Ads",
+    meta: "Google · Singapore",
+    body: null,
+  },
+  {
+    when: "2020 to 2022",
+    title: "Product Development Engineer",
+    meta: "Knovo · Singapore",
+    body: null,
+  },
+  {
+    when: "2019",
+    title: "BBA, Management Information Systems",
+    meta: "The University of Texas at Austin",
+    body: null,
+  },
+];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-10">
-          About
-        </p>
+    <section id="about" className="eg-container sec" aria-labelledby="about-h">
+      <div className="eg-split">
+        <div className="sec-head" style={{ alignContent: "start" }}>
+          <span className="eg-label">About</span>
+          <h2 id="about-h" className="heading-lg" style={{ margin: 0 }}>
+            From technical discovery to live deployment
+          </h2>
+        </div>
 
-        <div className="flex flex-col-reverse md:flex-row gap-12 md:gap-16 items-start">
-          <div className="max-w-[680px] space-y-6 text-[var(--muted)] leading-relaxed text-base">
-            <p>
-              Most of my professional career has been at Google in Singapore, where I spent over
-              three years as a technical product and strategy lead on the Ads side. At Google, my
-              title was Product Deployment Engineer — which in gTech means you&apos;re the product and
-              technical lead for your client portfolio. In practice: I managed a $160M enterprise
-              book, architected measurement infrastructure, built AI-enabled advertising solutions
-              on Gemini and GCP, led go-to-market strategy for products including GA4 and YouTube,
-              and owned the Video product area for Southeast Asia. I also contributed as an analyst
-              to the 2024 South East Asia e-Conomy Report on video commerce and the creator economy.
+        <div style={{ display: "grid", gap: "var(--space-12)" }}>
+          <div style={{ display: "grid", gap: "var(--space-4)" }}>
+            <p className="body-lg eg-measure">
+              At Google I was the technical lead for AI and advertising products across a $160M enterprise portfolio in Southeast Asia, taking client integrations from technical audit and planning through implementation and optimisation.
             </p>
-            <p>
-              I&apos;m now in Madrid completing a dual International MBA and MS in Computer Science at
-              IE University, alongside the Stanford LEAD professional certificate program. Outside
-              of coursework I&apos;m building three things:{" "}
-              <a href="https://lyferr.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Lyferr</a>
-              , a data-driven platform for sustainable tourism;{" "}
-              <a href="https://gendersmartinvesting.kerubincapital.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Kerubin Capital</a>
-              , a tool for gender-smart investing; and Tanaw, an AI platform to improve how
-              companies source and recruit global talent. These aren&apos;t side projects in the
-              &ldquo;someday&rdquo; sense — they&apos;re active builds I&apos;m working on now.
-            </p>
-            <p>
-              I&apos;m Filipina, grew up across Asia, and speak English, Tagalog, and enough Mandarin
-              to get by after a semester at Peking University. When I&apos;m not building, I&apos;m running
-              — or pulling apart political speeches to see how language, framing, and delivery shape
-              what people actually believe.
+            <p className="body eg-measure">
+              I build integrations, LLM prototypes and data pipelines with customer engineering teams, then turn repeat work into programs: playbooks, workshops and hackathons. Now I&apos;m in Madrid completing a dual MS in Computer Science and International MBA at IE University. I&apos;m Filipina, grew up across Asia, and speak English, Filipino, conversational Mandarin and beginner Spanish.
             </p>
           </div>
 
-          <div className="flex-shrink-0 w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden bg-[var(--card-bg)]">
-            <Image
-              src="/ella-garcia.jpeg"
-              alt="Ella Garcia"
-              width={192}
-              height={192}
-              className="w-full h-full object-cover"
-            />
+          <div className="eg-timeline">
+            {timeline.map((r) => (
+              <div className="eg-row" key={r.when}>
+                <span className="eg-row-when">{r.when}</span>
+                <div className="eg-row-main">
+                  <h3 className="eg-row-title">{r.title}</h3>
+                  <span className="eg-row-meta">{r.meta}</span>
+                  {r.body && <p className="eg-row-body">{r.body}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div>
+            <a className="eg-btn eg-btn--secondary" href="https://linkedin.com/in/patricia-ella-garcia" target="_blank" rel="noopener noreferrer">
+              Full history on LinkedIn{" "}
+              <svg className="eg-btn-icon" viewBox="0 0 18 18" aria-hidden="true">
+                <path d="M5 13L13 5M6.5 5H13V11.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

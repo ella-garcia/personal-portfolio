@@ -1,8 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="py-8 px-6 border-t border-[var(--border)]">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-sm text-[var(--muted)]">© 2026 Ella Garcia</p>
+    <footer className="eg-container" style={{ paddingTop: "var(--space-24)" }}>
+      <div className="eg-legal">
+        <span>© 2026 Ella Garcia · Madrid</span>
+        <span>
+          <a href="https://linkedin.com/in/patricia-ella-garcia" target="_blank" rel="noopener noreferrer" style={{ marginRight: 16 }}>LinkedIn</a>
+          <a href="mailto:patriciagabriellegarcia@gmail.com">Email</a>
+        </span>
       </div>
     </footer>
   );
