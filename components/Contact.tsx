@@ -27,14 +27,25 @@ export default function Contact() {
 
         <div className="eg-cta" style={{ paddingBlock: 0 }}>
           <span className="eg-label">Contact</span>
-          <h2 id="contact-h" className="eg-cta-title">Continue the conversation.</h2>
+          <h2 id="contact-h" className="eg-cta-title">Say hello.</h2>
           <p className="body eg-measure">
-            Hiring for a forward deployed or AI strategy role, or need a deployment shipped? Tell me what you&apos;re working on.
+            I&apos;m in Madrid. The easiest way to reach me is email.
           </p>
           <div style={{ display: "grid", gap: "var(--space-1)" }}>
             <span className="caption eg-muted">Email</span>
-            <a className="eg-copy" href="mailto:patriciagabriellegarcia@gmail.com">
-              patriciagabriellegarcia@gmail.com
+            <a className="eg-copy" href="mailto:ellaggabrielle@gmail.com">
+              ellaggabrielle@gmail.com
+            </a>
+          </div>
+          <div style={{ display: "grid", gap: "var(--space-1)", marginTop: "var(--space-4)" }}>
+            <span className="caption eg-muted">LinkedIn</span>
+            <a className="eg-copy" href="https://linkedin.com/in/patricia-ella-garcia" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/patricia-ella-garcia
+            </a>
+          </div>
+          <div style={{ marginTop: "var(--space-4)" }}>
+            <a className="eg-btn eg-btn--secondary" href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+              Download CV
             </a>
           </div>
         </div>

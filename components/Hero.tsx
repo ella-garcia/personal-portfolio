@@ -1,4 +1,4 @@
-import Image from "next/image";
+import HeroCarousel from "@/components/HeroCarousel";
 
 const ArrowIcon = () => (
   <svg viewBox="0 0 18 18" width={18} height={18}>
@@ -12,20 +12,12 @@ export default function Hero() {
       <section className="eg-container" aria-label="Introduction" style={{ paddingBlock: "var(--space-2) 0" }}>
         <div className="eg-bento">
 
-          {/* Photo tile */}
+          {/* Project carousel tile */}
           <div
             className="eg-tile tile-photo eg-rise"
-            style={{ gridColumn: "span 4", gridRow: "span 2", minHeight: 480 }}
+            style={{ gridColumn: "span 4", gridRow: "span 2", minHeight: 480, padding: 0, overflow: "hidden" }}
           >
-            <div className="eg-photo">
-              <Image
-                src="/ella-garcia.jpeg"
-                alt="Ella Garcia"
-                fill
-                style={{ objectFit: "cover", borderRadius: "inherit" }}
-                priority
-              />
-            </div>
+            <HeroCarousel />
           </div>
 
           {/* Intro tile */}
@@ -34,31 +26,31 @@ export default function Hero() {
             <div style={{ display: "grid", gap: "var(--space-6)" }}>
               <h1 className="display-xl" style={{ margin: 0 }}>Ella Garcia</h1>
               <p className="body-lg" style={{ maxWidth: "42ch" }}>
-                I take AI and data products from technical discovery to live deployment, working alongside customer engineering teams and tying every technical choice to revenue and adoption.
+                I like sitting with a team until something small is running. Each piece below covers what I built and what got in the way.
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "var(--space-2)" }}>
-                <a className="eg-btn eg-btn--primary" href="#contact">Get in touch</a>
-                <a className="eg-btn eg-btn--secondary" href="#deployments">See deployments</a>
+                <a className="eg-btn eg-btn--primary" href="/work">See the work</a>
+                <a className="eg-btn eg-btn--secondary" href="#contact">Get in touch</a>
               </div>
             </div>
           </div>
 
-          {/* Hiring managers tile */}
-          <a className="eg-tile tile-accent eg-rise" href="#looking" style={{ gridColumn: "span 5", minHeight: 232 }}>
+          {/* Work browse tile */}
+          <a className="eg-tile tile-accent eg-rise" href="/work" style={{ gridColumn: "span 5", minHeight: 232 }}>
             <span className="eg-notch">
               <span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span>
             </span>
-            <span className="eg-label">For hiring managers</span>
-            <span className="eg-tile-title" style={{ fontSize: 28 }}>What I&apos;m looking for next</span>
+            <span className="eg-label">Work</span>
+            <span className="eg-tile-title" style={{ fontSize: 28 }}>Case studies from Google</span>
           </a>
 
-          {/* Services tile */}
-          <a className="eg-tile tile-deep eg-rise" href="#services" style={{ gridColumn: "span 3", minHeight: 232 }}>
+          {/* Projects browse tile */}
+          <a className="eg-tile tile-deep eg-rise" href="/projects" style={{ gridColumn: "span 3", minHeight: 232 }}>
             <span className="eg-notch">
               <span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span>
             </span>
-            <span className="eg-label">Work with me</span>
-            <span className="eg-tile-title" style={{ fontSize: 28 }}>AI deployment and strategy projects</span>
+            <span className="eg-label">Projects</span>
+            <span className="eg-tile-title" style={{ fontSize: 28 }}>Things I build on my own time</span>
           </a>
 
         </div>

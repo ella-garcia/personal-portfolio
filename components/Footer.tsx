@@ -2,10 +2,11 @@ export default function Footer() {
   return (
     <footer className="eg-container" style={{ paddingTop: "var(--space-24)" }}>
       <div className="eg-legal">
-        <span>© 2026 Ella Garcia · Madrid</span>
-        <span>
-          <a href="https://linkedin.com/in/patricia-ella-garcia" target="_blank" rel="noopener noreferrer" style={{ marginRight: 16 }}>LinkedIn</a>
-          <a href="mailto:patriciagabriellegarcia@gmail.com">Email</a>
+        <span>Ella Garcia · Madrid</span>
+        <span style={{ display: "flex", gap: "var(--space-6)", flexWrap: "wrap" }}>
+          <a href="https://linkedin.com/in/patricia-ella-garcia" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+          <a href="#contact">Contact</a>
         </span>
       </div>
     </footer>

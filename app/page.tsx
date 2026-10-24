@@ -5,8 +5,6 @@ import About from "@/components/About";
 import Deployments from "@/components/Deployments";
 import Builds from "@/components/Builds";
 import Awards from "@/components/Awards";
-import Looking from "@/components/Looking";
-import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -20,8 +18,6 @@ export default function Home() {
       <Deployments />
       <Builds />
       <Awards />
-      <Looking />
-      <Services />
       <Contact />
       <Footer />
     </>

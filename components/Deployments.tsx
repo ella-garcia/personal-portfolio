@@ -33,6 +33,13 @@ const cards = [
     body: "An industry-first solution that let a mobile OEM and its retail and carrier partners co-market and measure performance together.",
     tags: ["Measurement", "Partner integration"],
   },
+  {
+    col: 5,
+    title: "AI creator curation for a QSR product launch",
+    outcome: "Double-digit lift in units sold and daily revenue",
+    body: "Built a Gemini-powered script to vet hundreds of YouTube creators against a major QSR brand's brief, scoring each on engagement and brand alignment. Combined Video Reach and View Campaigns with Partnership Ads across creator tiers, then ran post-campaign sentiment analysis to surface consumer insights for future campaigns.",
+    tags: ["Gemini", "YouTube", "Creator strategy"],
+  },
 ];
 
 export default function Deployments() {

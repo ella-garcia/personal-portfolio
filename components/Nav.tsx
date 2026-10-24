@@ -5,8 +5,10 @@ import { useTheme } from "next-themes";
 
 const links = [
   { href: "#about", label: "About" },
-  { href: "#deployments", label: "Work" },
-  { href: "#builds", label: "Builds" },
+  { href: "/work", label: "Work" },
+  { href: "/projects", label: "Projects" },
+  { href: "/workshops", label: "Workshops" },
+  { href: "/how-i-work", label: "How I work" },
 ];
 
 export default function Nav() {
@@ -17,7 +19,7 @@ export default function Nav() {
   useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
-    const ids = ["top", "about", "deployments", "builds", "looking", "services", "contact"];
+    const ids = ["top", "about", "deployments", "builds", "awards", "contact"];
     const obs = ids.map((id) => {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -47,6 +49,9 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" style={{ fontSize: 14, fontWeight: 500, color: "var(--ink-muted)", padding: "0 4px" }}>
+            CV
+          </a>
           <a className="eg-btn eg-btn--light" href="#contact" style={{ minHeight: 36, padding: "0 16px", fontSize: 14, fontWeight: 600 }}>
             Contact
           </a>
