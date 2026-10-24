@@ -14,7 +14,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "gemini-creative-production",
     title: "A Gemini creative production process",
     kind: "case-study",
-    outcome: "+35ppts quarter-on-quarter revenue",
+    outcome: "Measurable quarter-on-quarter revenue lift",
     sections: [
       {
         heading: "The situation",
@@ -44,7 +44,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "gemini-video-creator",
     title: "Gemini for video and creator decisions",
     kind: "case-study",
-    outcome: "+20ppts national sales",
+    outcome: "Measurable national sales lift",
     sections: [
       {
         heading: "The situation",
@@ -81,7 +81,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "joint-measurement",
     title: "Joint measurement across partners",
     kind: "case-study",
-    outcome: "11x purchase rate",
+    outcome: "Significant lift in purchase rate",
     sections: [
       {
         heading: "The situation",
@@ -121,7 +121,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "live-data-display-ads",
     title: "Live-data display ads",
     kind: "case-study",
-    outcome: "100M reach",
+    outcome: "National-scale reach",
     sections: [
       {
         heading: "What I built",

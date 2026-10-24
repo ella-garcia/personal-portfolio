@@ -1,8 +1,8 @@
 const stats = [
-  { figure: "$160M", caption: "Enterprise portfolio I was technical lead for at Google" },
   { figure: "5+ yrs", caption: "In product and deployment engineering" },
-  { figure: "+35ppts", caption: "Quarter-on-quarter revenue from a Gemini creative process" },
-  { figure: "11x", caption: "Purchase rate from a joint OEM measurement solution" },
+  { figure: "8", caption: "Deployments shipped at Google across Southeast Asia" },
+  { figure: "4", caption: "Self-built products and data projects" },
+  { figure: "3", caption: "Languages — English, Filipino, Mandarin" },
 ];
 
 export default function Stats() {
