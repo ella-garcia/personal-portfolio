@@ -52,7 +52,7 @@ export default function Nav() {
           <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" style={{ fontSize: 14, fontWeight: 500, color: "var(--ink-muted)", padding: "0 4px" }}>
             CV
           </a>
-          <a className="eg-btn eg-btn--light" href="#contact" style={{ minHeight: 36, padding: "0 16px", fontSize: 14, fontWeight: 600 }}>
+          <a className="eg-btn eg-btn--primary" href="#contact" style={{ minHeight: 36, padding: "0 16px", fontSize: 14, fontWeight: 600 }}>
             Contact
           </a>
           {mounted && (
