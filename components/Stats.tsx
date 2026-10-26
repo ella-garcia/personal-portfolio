@@ -2,7 +2,7 @@ const stats = [
   { figure: "5+ yrs", caption: "In product and deployment engineering" },
   { figure: "8", caption: "Deployments shipped at Google across Southeast Asia" },
   { figure: "4", caption: "Self-built products and data projects" },
-  { figure: "3", caption: "Languages — English, Filipino, Mandarin" },
+  { figure: "4", caption: "Languages — English, Filipino, Mandarin, Spanish" },
 ];
 
 export default function Stats() {

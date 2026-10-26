@@ -116,7 +116,7 @@ export default function About() {
               The problems I keep coming back to sit between an AI idea and a working system. Usually the hard question is who has to change how they work, and how anyone will know it helped.
             </p>
             <p className="body eg-measure">
-              Outside work, I run half marathons. I also follow political strategy closely enough that I tried to predict the President&apos;s State of the Nation Address (it&apos;s under Projects). I speak English and Filipino, get by in Mandarin, and am learning Spanish.
+              Outside work, I run half marathons. I also follow political strategy closely enough that I tried to predict the President&apos;s State of the Nation Address (it&apos;s under Projects). I speak English, Filipino, and Spanish, and get by in Mandarin.
             </p>
           </div>
 
