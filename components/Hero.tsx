@@ -41,7 +41,7 @@ export default function Hero() {
               <span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span>
             </span>
             <span className="eg-label">Work</span>
-            <span className="eg-tile-title" style={{ fontSize: 28 }}>Case studies from Google</span>
+            <span className="eg-tile-title" style={{ fontSize: 28 }}>Case studies</span>
           </a>
 
           {/* Projects browse tile */}

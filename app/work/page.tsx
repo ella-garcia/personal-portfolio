@@ -21,7 +21,7 @@ export default function WorkPage() {
           <div className="sec-head">
             <span className="eg-label">Work</span>
             <h1 id="work-h" className="heading-lg" style={{ margin: 0 }}>
-              Case studies from Google
+              Case studies
             </h1>
             <p className="body eg-muted" style={{ maxWidth: "52ch" }}>
               From my time as a Product Deployment Engineer in Singapore. I&apos;ve left the clients unnamed. Each piece starts with the problem and ends with what changed.
