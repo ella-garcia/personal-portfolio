@@ -36,7 +36,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
           <div className="eg-split">
             <div className="sec-head" style={{ alignContent: "start" }}>
-              <span className="eg-tag eg-tag--shipped" style={{ alignSelf: "start" }}>Shipped</span>
+              <span className="eg-tag" style={{ alignSelf: "start" }}>{cs.category}</span>
               <h1 className="heading-lg" style={{ margin: 0 }}>{cs.title}</h1>
               <p className="body" style={{ color: "var(--ink-muted)" }}>{cs.outcome}</p>
             </div>

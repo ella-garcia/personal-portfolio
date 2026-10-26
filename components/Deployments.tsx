@@ -8,6 +8,7 @@ const cards = [
   {
     col: 7,
     title: "AI creative production on Gemini",
+    category: "Creative Production",
     outcome: "Measurable quarter-on-quarter revenue lift",
     body: "Built an AI creative production process with Gemini for enterprise advertisers, replacing a manual production cycle with a repeatable workflow.",
     tags: ["Gemini", "Workflow design"],
@@ -15,6 +16,7 @@ const cards = [
   {
     col: 5,
     title: "Video and sentiment analysis with the Gemini API",
+    category: "Content Analysis",
     outcome: "Measurable national sales lift",
     body: "Long-form video highlight discovery, YouTube channel suitability and sentiment analysis for creator and content decisions, scaled into an AI-enabled workflow.",
     tags: ["Gemini API", "Python"],
@@ -22,6 +24,7 @@ const cards = [
   {
     col: 5,
     title: "Live-data display ads",
+    category: "Ad Tech",
     outcome: "National-scale reach",
     body: "A display ad system that pulls live scores from an external API, built on Google Cloud.",
     tags: ["Google Cloud", "API integration"],
@@ -29,6 +32,7 @@ const cards = [
   {
     col: 7,
     title: "Joint measurement for a mobile OEM",
+    category: "Measurement",
     outcome: "Significant lift in purchase rate",
     body: "An industry-first solution that let a mobile OEM and its retail and carrier partners co-market and measure performance together.",
     tags: ["Measurement", "Partner integration"],
@@ -36,6 +40,7 @@ const cards = [
   {
     col: 5,
     title: "AI creator curation for a QSR product launch",
+    category: "Creator Strategy",
     outcome: "Measurable lift in units sold and daily revenue",
     body: "Built a Gemini-powered script to vet hundreds of YouTube creators against a major QSR brand's brief, scoring each on engagement and brand alignment. Combined Video Reach and View Campaigns with Partnership Ads across creator tiers, then ran post-campaign sentiment analysis to surface consumer insights for future campaigns.",
     tags: ["Gemini", "YouTube", "Creator strategy"],
@@ -55,7 +60,7 @@ export default function Deployments() {
           <div className="eg-card" key={c.title} style={{ gridColumn: `span ${c.col}` }}>
             <div className="eg-card-head">
               <span className="eg-card-title">{c.title}</span>
-              <span className="eg-tag eg-tag--shipped">Shipped</span>
+              <span className="eg-tag">{c.category}</span>
             </div>
             <p className="outcome">{c.outcome}</p>
             <p className="eg-card-body">{c.body}</p>

@@ -41,7 +41,7 @@ export default function WorkPage() {
                 </span>
                 <div className="eg-card-head">
                   <span className="eg-card-title">{cs.title}</span>
-                  <span className="eg-tag eg-tag--shipped">Shipped</span>
+                  <span className="eg-tag">{cs.category}</span>
                 </div>
                 <p className="outcome">{cs.outcome}</p>
                 <div className="eg-card-body" style={{ color: "var(--ink-muted)", marginTop: "auto", fontSize: 14, lineHeight: 1.6 }}>

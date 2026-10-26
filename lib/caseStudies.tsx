@@ -2,6 +2,7 @@ export type CaseStudy = {
   slug: string;
   title: string;
   kind: "case-study" | "project" | "role" | "data";
+  category: string;
   outcome: string;
   sections: {
     heading: string;
@@ -14,6 +15,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "gemini-creative-production",
     title: "A Gemini creative production process",
     kind: "case-study",
+    category: "Creative Production",
     outcome: "Measurable quarter-on-quarter revenue lift",
     sections: [
       {
@@ -44,6 +46,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "gemini-video-creator",
     title: "Gemini for video and creator decisions",
     kind: "case-study",
+    category: "Content Analysis",
     outcome: "Measurable national sales lift",
     sections: [
       {
@@ -81,6 +84,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "joint-measurement",
     title: "Joint measurement across partners",
     kind: "case-study",
+    category: "Measurement",
     outcome: "Significant lift in purchase rate",
     sections: [
       {
@@ -121,6 +125,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "live-data-display-ads",
     title: "Live-data display ads",
     kind: "case-study",
+    category: "Ad Tech",
     outcome: "National-scale reach",
     sections: [
       {
@@ -148,6 +153,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "one-off-to-programs",
     title: "Turning one-off work into programs",
     kind: "case-study",
+    category: "Enablement",
     outcome: "Regional go-to-market playbook",
     sections: [
       {
@@ -176,6 +182,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "youtube-technical-lead",
     title: "YouTube technical lead, Southeast Asia",
     kind: "role",
+    category: "Leadership",
     outcome: "Higher revenue and wider product adoption",
     sections: [
       {
@@ -193,6 +200,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "creator-data",
     title: "Creator data for a regional report",
     kind: "data",
+    category: "Data",
     outcome: "e-Conomy SEA 2024",
     sections: [
       {
@@ -221,6 +229,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "knovo",
     title: "Before Google: Knovo",
     kind: "role",
+    category: "Product",
     outcome: "Cross-platform migration",
     sections: [
       {

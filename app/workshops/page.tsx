@@ -47,19 +47,6 @@ export default function WorkshopsPage() {
                 ))}
               </div>
 
-              <div style={{ display: "flex", gap: "var(--space-3)", flexWrap: "wrap" }}>
-                <a
-                  className="eg-btn eg-btn--secondary"
-                  href="https://portfolio-rishi-work.vercel.app/writings/ai-workshops"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Slides on Claude and OpenClaw, on Rishi&apos;s site{" "}
-                  <svg className="eg-btn-icon" viewBox="0 0 18 18" aria-hidden="true">
-                    <path d="M5 13L13 5M6.5 5H13V11.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </section>
