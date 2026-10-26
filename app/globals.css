@@ -235,8 +235,11 @@ a:hover .eg-arrow svg { transform: rotate(45deg); }
   .eg-stat-figure { font-size: 36px; }
   .eg-card-title, .eg-row-title, .eg-service h3 { font-size: 22px; }
   .eg-cta-title { font-size: 34px; }
-  .eg-nav-pill a { padding: var(--space-2) var(--space-3); }
-  .eg-nav-pill .eg-btn--light { padding: 0 var(--space-3); }
+  /* Hide all plain text nav links; keep only Contact button + theme toggle */
+  .eg-nav-pill a:not([class*="eg-btn"]) { display: none; }
+  .eg-nav-pill .eg-btn--primary { padding: 0 var(--space-4); }
+  /* Timeline: stack date above title */
+  .eg-row { grid-template-columns: 1fr; gap: var(--space-2); padding-block: var(--space-6); }
   .display-xl { font-size: 52px; } .display-lg { font-size: 42px; }
   .heading-xl { font-size: 32px; } .heading-lg { font-size: 28px; }
   .body-lg { font-size: 18px; } .body { font-size: 16px; }
