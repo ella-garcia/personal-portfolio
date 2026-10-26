@@ -44,6 +44,7 @@ export default function WorkPage() {
                   <span className="eg-tag">{cs.category}</span>
                 </div>
                 <p className="outcome">{cs.outcome}</p>
+                <p style={{ fontSize: 13, color: "var(--ink-muted)", margin: 0, lineHeight: 1.4 }}>{cs.method}</p>
                 <div className="eg-card-body" style={{ color: "var(--ink-muted)", marginTop: "auto", fontSize: 14, lineHeight: 1.6 }}>
                   {cs.sections[0]?.body}
                 </div>

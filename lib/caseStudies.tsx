@@ -4,6 +4,7 @@ export type CaseStudy = {
   kind: "case-study" | "project" | "role" | "data";
   category: string;
   outcome: string;
+  method: string;
   sections: {
     heading: string;
     body: React.ReactNode;
@@ -17,6 +18,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "case-study",
     category: "Creative Production",
     outcome: "Measurable quarter-on-quarter revenue lift",
+    method: "Repeatable Gemini workflow with brand-safe source material retrieval",
     sections: [
       {
         heading: "The situation",
@@ -48,6 +50,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "case-study",
     category: "Content Analysis",
     outcome: "Measurable national sales lift",
+    method: "Automated highlight-discovery, channel-suitability, and sentiment pipeline",
     sections: [
       {
         heading: "The situation",
@@ -86,6 +89,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "case-study",
     category: "Measurement",
     outcome: "Significant lift in purchase rate",
+    method: "Joint measurement framework bridging metrics across manufacturer and distribution partners",
     sections: [
       {
         heading: "The situation",
@@ -127,6 +131,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "case-study",
     category: "Ad Tech",
     outcome: "National-scale reach",
+    method: "Live-data ad system on Google Cloud pulling real-time scores from an external API",
     sections: [
       {
         heading: "What I built",
@@ -155,6 +160,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "case-study",
     category: "Enablement",
     outcome: "Regional go-to-market playbook",
+    method: "Cross-team workshops and structured playbook synthesising recurring client requests",
     sections: [
       {
         heading: "What I built",
@@ -184,6 +190,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "role",
     category: "Leadership",
     outcome: "Higher revenue and wider product adoption",
+    method: "Technical product ownership across YouTube SEA — roadmap, deployment, and client enablement",
     sections: [
       {
         heading: "The role",
@@ -202,6 +209,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "data",
     category: "Data",
     outcome: "e-Conomy SEA 2024",
+    method: "BigQuery dataset with SQL cleaning pipeline normalising creator metrics across Meta, TikTok, and YouTube",
     sections: [
       {
         heading: "What I built",
@@ -231,6 +239,7 @@ export const caseStudies: CaseStudy[] = [
     kind: "role",
     category: "Product",
     outcome: "Cross-platform migration",
+    method: "Design migration from web-only to cross-platform in Figma, plus profile and wallet feature buildout",
     sections: [
       {
         heading: "The role",

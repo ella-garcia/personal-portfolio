@@ -10,6 +10,7 @@ const cards = [
     title: "AI creative production on Gemini",
     category: "Creative Production",
     outcome: "Measurable quarter-on-quarter revenue lift",
+    method: "Repeatable Gemini workflow with brand-safe source material retrieval",
     body: "Built an AI creative production process with Gemini for enterprise advertisers, replacing a manual production cycle with a repeatable workflow.",
     tags: ["Gemini", "Workflow design"],
   },
@@ -18,6 +19,7 @@ const cards = [
     title: "Video and sentiment analysis with the Gemini API",
     category: "Content Analysis",
     outcome: "Measurable national sales lift",
+    method: "Automated highlight-discovery, channel-suitability, and sentiment pipeline",
     body: "Long-form video highlight discovery, YouTube channel suitability and sentiment analysis for creator and content decisions, scaled into an AI-enabled workflow.",
     tags: ["Gemini API", "Python"],
   },
@@ -26,6 +28,7 @@ const cards = [
     title: "Live-data display ads",
     category: "Ad Tech",
     outcome: "National-scale reach",
+    method: "Live-data ad system on Google Cloud pulling real-time scores from an external API",
     body: "A display ad system that pulls live scores from an external API, built on Google Cloud.",
     tags: ["Google Cloud", "API integration"],
   },
@@ -34,6 +37,7 @@ const cards = [
     title: "Joint measurement for a mobile OEM",
     category: "Measurement",
     outcome: "Significant lift in purchase rate",
+    method: "Joint measurement framework bridging metrics across manufacturer and distribution partners",
     body: "An industry-first solution that let a mobile OEM and its retail and carrier partners co-market and measure performance together.",
     tags: ["Measurement", "Partner integration"],
   },
@@ -42,6 +46,7 @@ const cards = [
     title: "AI creator curation for a QSR product launch",
     category: "Creator Strategy",
     outcome: "Measurable lift in units sold and daily revenue",
+    method: "Gemini script scoring creators on engagement and brand alignment; post-campaign sentiment analysis",
     body: "Built a Gemini-powered script to vet hundreds of YouTube creators against a major QSR brand's brief, scoring each on engagement and brand alignment. Combined Video Reach and View Campaigns with Partnership Ads across creator tiers, then ran post-campaign sentiment analysis to surface consumer insights for future campaigns.",
     tags: ["Gemini", "YouTube", "Creator strategy"],
   },
@@ -63,6 +68,7 @@ export default function Deployments() {
               <span className="eg-tag">{c.category}</span>
             </div>
             <p className="outcome">{c.outcome}</p>
+            <p style={{ fontSize: 13, color: "var(--ink-muted)", margin: 0, lineHeight: 1.4 }}>{c.method}</p>
             <p className="eg-card-body">{c.body}</p>
             <ul className="eg-tags eg-card-foot">
               {c.tags.map((t) => <li className="eg-tag" key={t}>{t}</li>)}
