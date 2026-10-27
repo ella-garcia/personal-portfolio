@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
-          {children}
+          <div id="main-content">{children}</div>
         </ThemeProvider>
       </body>
     </html>

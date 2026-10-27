@@ -48,8 +48,18 @@ export default function WorkshopsPage() {
                 <div style={{ display: "grid", gap: "var(--space-2)" }}>
                   <span className="eg-label">For companies</span>
                   <p className="body eg-measure">
-                    Practical sessions I&apos;ve run for teams — on design, AI fundamentals, and building with agents. Available to book.
+                    Practical sessions I&apos;ve run for teams — on design, AI fundamentals, and building with agents.
                   </p>
+                  <div style={{ marginTop: "var(--space-2)" }}>
+                    <a
+                      className="eg-btn eg-btn--primary"
+                      href="https://linkedin.com/in/patricia-ella-garcia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Book a workshop on LinkedIn ↗
+                    </a>
+                  </div>
                 </div>
                 <div style={{ display: "grid", gap: "var(--space-6)" }}>
                   {professionalWorkshops.map((w) => (
@@ -85,7 +95,17 @@ export default function WorkshopsPage() {
 
                 {/* Deck PDF */}
                 <div style={{ display: "grid", gap: "var(--space-4)" }}>
-                  <span className="eg-label">Deck PDF</span>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "var(--space-4)", flexWrap: "wrap" }}>
+                    <span className="eg-label">Deck PDF · 34 pages</span>
+                    <a
+                      className="eg-btn eg-btn--secondary"
+                      href="/ai-workshops.pdf"
+                      download
+                      style={{ minHeight: 32, padding: "0 var(--space-4)", fontSize: 13 }}
+                    >
+                      Download ↓
+                    </a>
+                  </div>
                   <iframe
                     src="/ai-workshops.pdf"
                     style={{
@@ -94,7 +114,7 @@ export default function WorkshopsPage() {
                       border: "1px solid var(--rule)",
                       borderRadius: "var(--radius-tile)",
                     }}
-                    title="AI Workshops deck"
+                    title="AI Workshops deck — Claude deep-dive, 34 pages"
                   />
                 </div>
               </div>

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 const links = [
-  { href: "#about", label: "About" },
+  { href: "/#about", label: "About" },
   { href: "/work", label: "Work" },
   { href: "/projects", label: "Projects" },
   { href: "/workshops", label: "Workshops" },
@@ -37,8 +37,19 @@ export default function Nav() {
 
   return (
     <header className="eg-container" style={{ position: "sticky", top: 0, zIndex: 5, background: "var(--ground)" }}>
+      <a
+        href="#main-content"
+        style={{
+          position: "absolute", left: -9999, top: "auto", width: 1, height: 1, overflow: "hidden",
+          focusVisible: undefined,
+        }}
+        onFocus={(e) => { e.currentTarget.style.left = "var(--space-4)"; e.currentTarget.style.width = "auto"; e.currentTarget.style.height = "auto"; }}
+        onBlur={(e) => { e.currentTarget.style.left = "-9999px"; e.currentTarget.style.width = "1px"; e.currentTarget.style.height = "1px"; }}
+      >
+        Skip to main content
+      </a>
       <nav className="eg-nav" aria-label="Main">
-        <a className="eg-wordmark" href="#top">Ella Garcia</a>
+        <a className="eg-wordmark" href="/">Ella Garcia</a>
         <div className="eg-nav-pill">
           {links.map((l) => (
             <a
@@ -49,16 +60,20 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" style={{ fontSize: 14, fontWeight: 500, color: "var(--ink-muted)", padding: "0 4px" }}>
-            CV
-          </a>
-          <a className="eg-btn eg-btn--primary" href="#contact" style={{ minHeight: 36, padding: "0 16px", fontSize: 14, fontWeight: 600 }}>
+          <a
+            className="eg-btn eg-btn--primary"
+            href="https://linkedin.com/in/patricia-ella-garcia"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ minHeight: 36, padding: "0 16px", fontSize: 14, fontWeight: 600 }}
+          >
             Contact
           </a>
           {mounted && (
             <button
               onClick={() => setTheme(isDark ? "light" : "dark")}
               aria-label="Toggle dark mode"
+              aria-pressed={isDark}
               style={{ background: "none", border: "none", cursor: "pointer", color: "var(--on-deep)", fontSize: 16, padding: "0 8px", minHeight: 36, display: "flex", alignItems: "center" }}
             >
               {isDark ? "☀" : "🌙"}
