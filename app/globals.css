@@ -14,6 +14,8 @@
   --deep: #262929;
   --on-deep: #ffffff;
   --on-deep-muted: #c9cdcc;
+  --blue: #1a3a8f;
+  --on-blue: #ffffff;
   --rule: #e2e3e0;
   --control-line: #7a8080;
   --focus: var(--ink);
@@ -38,6 +40,8 @@
   --deep: #eeeeeb;
   --on-deep: #121414;
   --on-deep-muted: #454b4b;
+  --blue: #3b63e8;
+  --on-blue: #ffffff;
   --rule: #2d3131;
   --control-line: #737a7a;
   --status-live: #8ccb97;
@@ -93,7 +97,7 @@ a { color: inherit; }
 
 /* ── Buttons ── */
 .eg-btn { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px; padding: 0 var(--space-6); border-radius: var(--radius-pill); border: 1px solid transparent; font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none; cursor: pointer; transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out); }
-.eg-btn--primary { background: var(--deep); color: var(--on-deep); }
+.eg-btn--primary { background: var(--blue); color: var(--on-blue); }
 .eg-btn--primary:hover { opacity: 0.85; }
 .eg-btn--secondary { background: transparent; color: var(--ink); border-color: var(--control-line); }
 .eg-btn--secondary:hover { background: var(--surface); }
