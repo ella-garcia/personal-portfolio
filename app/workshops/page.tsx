@@ -66,7 +66,10 @@ export default function WorkshopsPage() {
                 <div style={{ display: "grid", gap: "var(--space-2)" }}>
                   <span className="eg-label">IE MBA series</span>
                   <p className="body eg-measure">
-                    Four sessions co-run with Rishi Kashyap for our MBA classmates at IE. The aim was to get people past reading about AI and into building something with it.
+                    A series of AI workshops co-run with Rishi Kashyap for our MBA classmates at IE. The aim was to get people past reading about AI and into building something with it.
+                  </p>
+                  <p className="body eg-measure" style={{ color: "var(--ink-muted)" }}>
+                    The feedback from our peers was overwhelming — it was their push that kept the sessions going.
                   </p>
                 </div>
                 <div className="eg-timeline">
@@ -78,6 +81,21 @@ export default function WorkshopsPage() {
                       </div>
                     </div>
                   ))}
+                </div>
+
+                {/* Deck PDF */}
+                <div style={{ display: "grid", gap: "var(--space-4)" }}>
+                  <span className="eg-label">Deck PDF</span>
+                  <iframe
+                    src="/ai-workshops.pdf"
+                    style={{
+                      width: "100%",
+                      height: 600,
+                      border: "1px solid var(--rule)",
+                      borderRadius: "var(--radius-tile)",
+                    }}
+                    title="AI Workshops deck"
+                  />
                 </div>
               </div>
 
