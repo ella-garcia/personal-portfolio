@@ -88,7 +88,7 @@ export default function HeroCarousel() {
         }}
       >
         {/* Top: label + tag */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "var(--space-2)" }}>
           <span style={{ fontSize: 13, fontWeight: 600, color: slide.mutedColor, letterSpacing: "0.01em" }}>
             {slide.label}
           </span>

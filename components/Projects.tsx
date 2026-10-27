@@ -53,17 +53,11 @@ const professionalWork = [
 ];
 
 function StatusBadge({ status }: { status: string }) {
-  const color =
-    status === "Live"
-      ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-      : status === "In Progress"
-      ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
-      : "bg-[var(--card-bg)] text-[var(--muted)]";
-  return (
-    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${color}`}>
-      {status}
-    </span>
-  );
+  const cls =
+    status === "Live" ? "eg-tag eg-tag--live"
+    : status === "In Progress" ? "eg-tag eg-tag--progress"
+    : "eg-tag eg-tag--shipped";
+  return <span className={cls}>{status}</span>;
 }
 
 function Card({

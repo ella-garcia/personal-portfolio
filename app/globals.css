@@ -20,8 +20,8 @@
   --control-line: #7a8080;
   --focus: var(--ink);
   --focus-on-accent: var(--on-accent);
-  --status-live: #2e6a3a;
-  --status-live-bg: #e0eedd;
+  --status-live: #1a3a8f;
+  --status-live-bg: #dce6ff;
   --status-progress: #85580a;
   --status-progress-bg: #f5e8cf;
   --status-shipped: #2e5577;
@@ -44,8 +44,8 @@
   --on-blue: #ffffff;
   --rule: #2d3131;
   --control-line: #737a7a;
-  --status-live: #8ccb97;
-  --status-live-bg: #1c2e20;
+  --status-live: #7fa8f5;
+  --status-live-bg: #1a2a4a;
   --status-progress: #e3b866;
   --status-progress-bg: #352a14;
   --status-shipped: #94b8da;
@@ -139,7 +139,7 @@ a:hover .eg-arrow svg { transform: rotate(45deg); }
 .eg-tag--progress { background: var(--status-progress-bg); color: var(--status-progress); }
 .eg-tag--shipped { background: var(--status-shipped-bg); color: var(--status-shipped); }
 .eg-tag--live::before, .eg-tag--progress::before, .eg-tag--shipped::before { content: ""; width: 6px; height: 6px; border-radius: var(--radius-round); background: currentColor; }
-.card-accent .eg-tag { background: var(--ground); color: var(--ink); }
+.card-accent .eg-tag:not([class*="eg-tag--"]) { background: var(--ground); color: var(--ink); }
 
 /* ── Stats ── */
 .eg-stats { display: grid; gap: var(--grid-gap); grid-template-columns: repeat(4, minmax(0,1fr)); }
@@ -154,6 +154,7 @@ a:hover .eg-arrow svg { transform: rotate(45deg); }
 .eg-nav-pill a { color: var(--on-deep); text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: -0.01em; padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill); min-height: 36px; display: inline-flex; align-items: center; transition: background var(--dur-fast) var(--ease-out); }
 .eg-nav-pill a:hover, .eg-nav-pill a[aria-current="page"] { background: var(--ink-muted); }
 .eg-nav-pill .eg-btn--light { min-height: 36px; padding: 0 var(--space-4); font-size: 14px; }
+.eg-nav-pill .eg-btn--primary { background: var(--ground); color: var(--ink); }
 
 /* ── Card ── */
 .eg-card { position: relative; display: flex; flex-direction: column; gap: var(--space-4); background: var(--surface); color: var(--ink); border-radius: var(--radius-tile); padding: var(--space-8); min-width: 0; text-decoration: none; }
