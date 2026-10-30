@@ -46,12 +46,12 @@ export default function ProjectsPage() {
                 <span className="eg-card-title">Gender-Smart Investing Map of the Philippines</span>
                 <span className="eg-tag eg-tag--live">Live</span>
               </div>
+              <ul className="eg-tags" style={{ marginTop: "var(--space-2)" }}>
+                {["Next.js", "TypeScript", "Airtable", "D3"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
               <p className="eg-card-body">
                 Technical lead, for Kerubin Capital with Investing in Women and the Manila Angel Investors Network. There wasn&apos;t one place to look up women-led and gender-lens ventures in the Philippines, or the people funding them. I built a directory and network map to fix that. It runs on Next.js and Vercel with Airtable behind it. Four types of organisation can submit their own entries, and the map shows who is connected to whom.
               </p>
-              <ul className="eg-tags eg-card-foot">
-                {["Next.js", "TypeScript", "Airtable", "D3"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
-              </ul>
             </a>
 
             {/* Lyferr */}
@@ -70,12 +70,12 @@ export default function ProjectsPage() {
                 <span className="eg-card-title">Lyferr</span>
                 <span className="eg-tag eg-tag--live">Live</span>
               </div>
+              <ul className="eg-tags" style={{ marginTop: "var(--space-2)" }}>
+                {["Matching algorithms", "0 to 1", "Next.js", "Vercel"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
               <p className="eg-card-body">
                 Co-founder and CTO. Most people book a wildlife trip to see one animal, and whether they do depends a lot on the guide. Lyferr is a marketplace that starts from the species. It matches travellers with local guides who know that animal in that place, and puts bookings next to guide expertise and real-time scientific data. I took it from concept to a live platform in five weeks and designed the two algorithms behind it.
               </p>
-              <ul className="eg-tags eg-card-foot">
-                {["Matching algorithms", "0 to 1"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
-              </ul>
             </a>
 
             {/* NarrativeRadar */}
@@ -84,15 +84,15 @@ export default function ProjectsPage() {
                 <span className="eg-card-title">NarrativeRadar</span>
                 <span className="eg-tag eg-tag--shipped">1st place · CIVICA EU AI Hackathon</span>
               </div>
+              <ul className="eg-tags" style={{ marginTop: "var(--space-2)" }}>
+                {["Multi-model pipelines", "Whisper", "Hive", "Claude", "Python"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
               <p className="eg-card-body">
                 Built with Henry Kurze (Hertie School) and Laura Luca (SNSPA). EU rules like the Digital Services Act ask platforms to be open about what they host. Most auditing tools still work on text, while more and more of what people watch is short-form video. We built an auditing tool that takes a video and checks it against independent fact-checks and EU platform law, comparing it with the moderation logs platforms publish about themselves.
               </p>
               <p className="eg-card-body" style={{ color: "var(--ink-muted)" }}>
                 Set up as a chain of specialised models: Whisper transcribes the audio, Hive classifies what&apos;s on screen, ChatGPT and Claude cross-reference the result against the legal frameworks and draft the policy notes.
               </p>
-              <ul className="eg-tags eg-card-foot">
-                {["Whisper", "Hive", "Claude", "Python"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
-              </ul>
             </div>
 
             {/* SONA prediction */}
@@ -101,6 +101,9 @@ export default function ProjectsPage() {
                 <span className="eg-card-title">Predicting the State of the Nation Address</span>
                 <span className="eg-tag eg-tag--shipped">Solo · SONA 2026</span>
               </div>
+              <ul className="eg-tags" style={{ marginTop: "var(--space-2)" }}>
+                {["Scoring model", "Agentic workflow", "Claude", "Political strategy"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
               <p className="eg-card-body">
                 For years I watched the President&apos;s State of the Nation Address with a notes app open, logging which topics came up and timing how many minutes each one got. This year I turned my manual tracking into a weighted scoring model. Claude handled the volume: six months of pre-SONA news, investment pledges, priority bills and coalition stances, scored and written up.
               </p>
@@ -114,9 +117,6 @@ export default function ProjectsPage() {
                   <span className="body">The order. A war in the Middle East changed the speech&apos;s priorities at the last minute.</span>
                 </div>
               </div>
-              <ul className="eg-tags eg-card-foot">
-                {["Scoring model", "Claude", "Political strategy"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
-              </ul>
             </div>
 
             {/* Caretaker Companion */}
@@ -125,6 +125,9 @@ export default function ProjectsPage() {
                 <span className="eg-card-title">Caretaker Companion</span>
                 <span className="eg-tag eg-tag--shipped">Course project · IE University</span>
               </div>
+              <ul className="eg-tags" style={{ marginTop: "var(--space-2)" }}>
+                {["RAG", "Embeddings", "FAISS", "Evals", "Agent routing", "Hugging Face", "Python"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
               <p className="eg-card-body">
                 Care homes run on rotating staff. Between agency workers, shift swaps and new hires, much of what carers know about a resident is lost at handover. I built a prototype RAG assistant that gives care staff short refreshers when they need them — answering only from eight public clinical guidelines, never making anything up.
               </p>
@@ -134,9 +137,6 @@ export default function ProjectsPage() {
               <p className="eg-card-body" style={{ color: "var(--ink-muted)" }}>
                 <strong style={{ color: "var(--ink)" }}>What didn&apos;t work at first.</strong> The first version made up an answer. A stricter prompt didn&apos;t stop it, so I enforced the rule in code: hard relevance thresholds and a fallback re-search without the filter. I also ran evals across the full guideline set to find where retrieval broke down and to compare the 1.5B vs 3B model on answer quality.
               </p>
-              <ul className="eg-tags eg-card-foot">
-                {["RAG", "Embeddings", "FAISS", "Evals", "Hugging Face", "Python"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
-              </ul>
             </div>
 
           </div>
