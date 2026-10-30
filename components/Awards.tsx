@@ -1,7 +1,6 @@
 const credits = [
-  { name: "Ella Garcia", role: "Technical Solutions Consultant", org: "Google" },
-  { name: "Globe Telecom", role: "Client" },
-  { name: "WPP Media – EssenceMediacom", role: "Agency of Record" },
+  { name: "Globe Telecom" },
+  { name: "WPP Media" },
 ];
 
 
@@ -59,21 +58,11 @@ export default function Awards() {
           style={{ gridColumn: "span 5", gridRow: "span 2" }}
         >
           <span className="eg-label">Credits</span>
-          <div style={{ display: "grid", gap: "var(--space-6)", marginTop: "var(--space-2)" }}>
+          <div style={{ display: "grid", gap: "var(--space-3)", marginTop: "var(--space-2)" }}>
             {credits.map((c) => (
-              <div key={c.name} style={{ display: "grid", gap: "var(--space-1)" }}>
-                <span style={{ fontWeight: 600, fontSize: 15, lineHeight: 1.3 }}>
-                  {c.name}
-                </span>
-                <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>
-                  {c.role}
-                </span>
-                {c.org && (
-                  <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>
-                    {c.org}
-                  </span>
-                )}
-              </div>
+              <span key={c.name} style={{ fontWeight: 600, fontSize: 15, lineHeight: 1.3 }}>
+                {c.name}
+              </span>
             ))}
           </div>
         </div>
