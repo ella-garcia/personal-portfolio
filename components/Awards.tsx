@@ -1,15 +1,7 @@
 const credits = [
   { name: "Ella Garcia", role: "Technical Solutions Consultant", org: "Google" },
-  { name: "Elora Sam-Hukom", role: "Industry Lead – Travel, Tech, Telco, Retail & QSR", org: "Google" },
-  { name: "Macky Arañez", role: "Marketing Manager – Media & Performance Lead", org: "Globe Telecom" },
-  { name: "Jam Jimenez", role: "Marketing Manager – Brand Communication Design Lead", org: "Globe Telecom" },
-  { name: "Mellie Valimento", role: "Sr. Manager – Convergent Segments Strategy", org: "Globe Telecom" },
-  { name: "Abe Castro", role: "Assistant Director – Creative Development Lead", org: "Globe Telecom" },
-  { name: "Mohit Kakkar", role: "AOR Director", org: "WPP Media – EssenceMediacom" },
-  { name: "Brayan Acupan", role: "Communications Planning Director", org: "WPP Media – EssenceMediacom" },
-  { name: "Jennifer Bolisay-Ty", role: "Associate Communications Planning Director", org: "WPP Media – EssenceMediacom" },
-  { name: "Kelly Lihao", role: "Communications Planning Manager", org: "WPP Media – EssenceMediacom" },
-  { name: "Zuxa Siazon", role: "Biddable Campaign Delivery Manager", org: "WPP Media – EssenceMediacom" },
+  { name: "Globe Telecom", role: "Client" },
+  { name: "WPP Media – EssenceMediacom", role: "Agency of Record" },
 ];
 
 
@@ -76,11 +68,58 @@ export default function Awards() {
                 <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>
                   {c.role}
                 </span>
-                <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>
-                  {c.org}
-                </span>
+                {c.org && (
+                  <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>
+                    {c.org}
+                  </span>
+                )}
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Narrative Radar tile */}
+        <div
+          className="eg-card"
+          style={{ gridColumn: "span 12", gap: "var(--space-6)" }}
+        >
+          <div className="eg-card-head">
+            <span className="eg-card-title">Narrative Radar</span>
+            <span className="eg-tag eg-tag--shipped">1st Place</span>
+          </div>
+
+          <p style={{ fontSize: 15, lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "60ch", margin: 0 }}>
+            AI-enabled platform-accountability auditing for short-form social media content. Built to help regulators and parliamentary offices enforce existing EU law — the DSA and AI Act — against platforms at scale, using traceable, reviewable evidence.
+          </p>
+
+          <dl style={{ display: "grid", gap: 0, marginTop: "auto" }}>
+            <div className="fact-row">
+              <dt>Competition</dt>
+              <dd>CIVICA EU AI Hackathon 2026</dd>
+            </div>
+            <div className="fact-row">
+              <dt>Track</dt>
+              <dd>AI, Disinformation &amp; Democratic Integrity</dd>
+            </div>
+            <div className="fact-row">
+              <dt>Institutions</dt>
+              <dd>Hertie School · IE University · SNSPA</dd>
+            </div>
+            <div className="fact-row">
+              <dt>Built in</dt>
+              <dd>3 days — April 2026</dd>
+            </div>
+          </dl>
+
+          <div>
+            <a
+              className="eg-btn eg-btn--primary"
+              href="https://github.com/ella-garcia/narrative-radar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
       </div>
