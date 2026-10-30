@@ -1,4 +1,10 @@
 const credits = [
+  {
+    name: "Ella Garcia",
+    role: "Technical Solutions Consultant",
+    org: "Google",
+    blurb: "Designed and built the workflow end-to-end and deployed across the business unit. The tool was later scaled company-wide, winning a second award the following year for a separate business unit.",
+  },
   { name: "Globe Telecom" },
   { name: "WPP Media" },
 ];
@@ -58,11 +64,20 @@ export default function Awards() {
           style={{ gridColumn: "span 5", gridRow: "span 2" }}
         >
           <span className="eg-label">Credits</span>
-          <div style={{ display: "grid", gap: "var(--space-3)", marginTop: "var(--space-2)" }}>
+          <div style={{ display: "grid", gap: "var(--space-6)", marginTop: "var(--space-2)" }}>
             {credits.map((c) => (
-              <span key={c.name} style={{ fontWeight: 600, fontSize: 15, lineHeight: 1.3 }}>
-                {c.name}
-              </span>
+              <div key={c.name} style={{ display: "grid", gap: "var(--space-1)" }}>
+                <span style={{ fontWeight: 600, fontSize: 15, lineHeight: 1.3 }}>{c.name}</span>
+                {c.role && (
+                  <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>{c.role}</span>
+                )}
+                {c.org && (
+                  <span style={{ fontSize: 13, lineHeight: 1.4, color: "var(--ink-muted)" }}>{c.org}</span>
+                )}
+                {c.blurb && (
+                  <span style={{ fontSize: 13, lineHeight: 1.5, color: "var(--ink-muted)", marginTop: "var(--space-1)" }}>{c.blurb}</span>
+                )}
+              </div>
             ))}
           </div>
         </div>
