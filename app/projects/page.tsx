@@ -139,6 +139,25 @@ export default function ProjectsPage() {
               </p>
             </div>
 
+            {/* HappyRobot */}
+            <a
+              className="eg-card"
+              href="/happyrobot"
+              style={{ gridColumn: "span 12" }}
+            >
+              <span className="eg-notch"><span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span></span>
+              <div className="eg-card-head">
+                <span className="eg-card-title">How I&apos;d work as a Deployment Strategist at HappyRobot</span>
+                <span className="eg-tag eg-tag--shipped">Application portfolio</span>
+              </div>
+              <ul className="eg-tags" style={{ marginTop: "var(--space-2)" }}>
+                {["Deployment strategy", "Account planning", "Enterprise sales", "Telecom"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
+              <p className="eg-card-body">
+                Eight sections laying out how I&apos;d approach the role: why HappyRobot and why now, two past partnerships and what I changed after each, how I&apos;d work alongside an FDE, a full account prep for a first telecom customer from Madrid, a measurement framework, and a 30-day plan.
+              </p>
+            </a>
+
           </div>
         </section>
 
