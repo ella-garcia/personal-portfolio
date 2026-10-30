@@ -21,10 +21,10 @@ export default function ProjectsPage() {
           <div className="sec-head">
             <span className="eg-label">Projects</span>
             <h1 id="projects-h" className="heading-lg" style={{ margin: 0 }}>
-              Things I build on my own time
+              Projects &amp; skills
             </h1>
             <p className="body eg-muted" style={{ maxWidth: "52ch" }}>
-              From first sketch to something people use.
+              Things I build outside my day job, from course prototypes to products people use.
             </p>
           </div>
 
@@ -119,6 +119,91 @@ export default function ProjectsPage() {
               </ul>
             </div>
 
+            {/* Caretaker Companion */}
+            <div className="eg-card" style={{ gridColumn: "span 12" }}>
+              <div className="eg-card-head">
+                <span className="eg-card-title">Caretaker Companion</span>
+                <span className="eg-tag eg-tag--shipped">Course project · IE University</span>
+              </div>
+              <p className="eg-card-body">
+                Care homes run on rotating staff. Between agency workers, shift swaps and new hires, much of what carers know about a resident is lost at handover. I built a prototype RAG assistant that gives care staff short refreshers when they need them — answering only from eight public clinical guidelines, never making anything up.
+              </p>
+              <p className="eg-card-body" style={{ color: "var(--ink-muted)" }}>
+                I split the guidelines into 594 passages, each tagged with source, date, language and topic. A small open model decides whether a question needs a search, what to search for, and whether to narrow the search by date or source. The search filters before it ranks, so a request for recent guidance never returns a 2009 document. When no passage clears a relevance threshold, the assistant says it doesn&apos;t know — the model is never asked.
+              </p>
+              <p className="eg-card-body" style={{ color: "var(--ink-muted)" }}>
+                <strong style={{ color: "var(--ink)" }}>What didn&apos;t work at first.</strong> The first version made up an answer. A stricter prompt didn&apos;t stop it, so I enforced the rule in code: hard relevance thresholds and a fallback re-search without the filter. I also ran evals across the full guideline set to find where retrieval broke down and to compare the 1.5B vs 3B model on answer quality.
+              </p>
+              <ul className="eg-tags eg-card-foot">
+                {["RAG", "Embeddings", "FAISS", "Evals", "Hugging Face", "Python"].map((t) => <li className="eg-tag" key={t}>{t}</li>)}
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        {/* Skills section */}
+        <section className="eg-container sec" aria-labelledby="skills-h">
+          <div className="sec-head">
+            <span className="eg-label">Toolkit</span>
+            <h2 id="skills-h" className="heading-lg" style={{ margin: 0 }}>Skills</h2>
+          </div>
+
+          <div className="eg-bento">
+            <div className="eg-card" style={{ gridColumn: "span 4" }}>
+              <span className="eg-label" style={{ marginBottom: "var(--space-4)", display: "block" }}>Applied AI</span>
+              <ul style={{ display: "grid", gap: "var(--space-2)", listStyle: "none", padding: 0, margin: 0 }}>
+                {[
+                  "Retrieval-augmented generation (RAG)",
+                  "Embeddings & vector search",
+                  "Evaluation (evals)",
+                  "Agent routing",
+                  "Multi-model pipelines",
+                  "Gemini API",
+                  "Whisper · Hive · Claude · ChatGPT",
+                ].map((s) => (
+                  <li key={s} style={{ fontSize: 14, lineHeight: 1.5, color: "var(--ink-muted)", display: "flex", gap: "var(--space-2)", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--ink-accent)", marginTop: 2, flexShrink: 0 }}>—</span>
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="eg-card" style={{ gridColumn: "span 4" }}>
+              <span className="eg-label" style={{ marginBottom: "var(--space-4)", display: "block" }}>Code &amp; data</span>
+              <ul style={{ display: "grid", gap: "var(--space-2)", listStyle: "none", padding: 0, margin: 0 }}>
+                {[
+                  "Python (pandas, PyTorch, Hugging Face)",
+                  "FAISS",
+                  "SQL & BigQuery",
+                  "TypeScript",
+                  "C# / ASP.NET",
+                ].map((s) => (
+                  <li key={s} style={{ fontSize: 14, lineHeight: 1.5, color: "var(--ink-muted)", display: "flex", gap: "var(--space-2)", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--ink-accent)", marginTop: 2, flexShrink: 0 }}>—</span>
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="eg-card" style={{ gridColumn: "span 4" }}>
+              <span className="eg-label" style={{ marginBottom: "var(--space-4)", display: "block" }}>Shipping</span>
+              <ul style={{ display: "grid", gap: "var(--space-2)", listStyle: "none", padding: 0, margin: 0 }}>
+                {[
+                  "Next.js & Vercel",
+                  "Airtable",
+                  "Google Cloud",
+                  "Figma",
+                ].map((s) => (
+                  <li key={s} style={{ fontSize: 14, lineHeight: 1.5, color: "var(--ink-muted)", display: "flex", gap: "var(--space-2)", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--ink-accent)", marginTop: 2, flexShrink: 0 }}>—</span>
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
       </main>

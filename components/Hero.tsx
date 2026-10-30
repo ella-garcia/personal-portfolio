@@ -26,7 +26,10 @@ export default function Hero() {
             <div style={{ display: "grid", gap: "var(--space-6)" }}>
               <h1 className="display-xl" style={{ margin: 0 }}>Ella Garcia</h1>
               <p className="body-lg" style={{ maxWidth: "42ch" }}>
-                I like sitting with a team until something small is running. Each piece below covers what I built and what got in the way.
+                Most of what I know, I learned at deployment.
+              </p>
+              <p className="body" style={{ maxWidth: "48ch", color: "var(--ink-muted)" }}>
+                I start with something small and scale it to solve problems for others as well. Each piece below covers what I built and what got in the way.
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "var(--space-2)" }}>
                 <a className="eg-btn eg-btn--primary" href="/work">See the work</a>
@@ -50,7 +53,7 @@ export default function Hero() {
               <span className="eg-arrow" aria-hidden="true"><ArrowIcon /></span>
             </span>
             <span className="eg-label">Projects</span>
-            <span className="eg-tile-title" style={{ fontSize: 28 }}>Things I build on my own time</span>
+            <span className="eg-tile-title" style={{ fontSize: 28 }}>Projects &amp; skills</span>
           </a>
 
         </div>
